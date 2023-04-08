@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace File.Client
 {
-    public class Client
+    public class BaseClient
     {
-        //create a client
-        //call this client, this endpoint, this api.
-
-        public string GetData()
+        public string GetData(string address)
         {
             try
             {
                 using var client = new HttpClient();
-                var result = client.GetAsync("https://localhost:7177/File").Result;
+                var result = client.GetAsync(address).Result;
                 return result.Content.ReadAsStringAsync().Result;
             }
             catch (Exception e)
