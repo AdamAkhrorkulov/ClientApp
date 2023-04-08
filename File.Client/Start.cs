@@ -1,4 +1,4 @@
-﻿namespace File.Client
+﻿namespace Main.Client
 {
     public class Start
     {

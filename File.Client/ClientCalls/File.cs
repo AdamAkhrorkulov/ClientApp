@@ -1,6 +1,4 @@
-﻿using File.Client;
-
-namespace Main.Client.ClientCalls;
+﻿namespace Main.Client.ClientCalls;
 
 public class File
 {
